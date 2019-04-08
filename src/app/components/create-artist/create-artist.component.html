@@ -1,0 +1,28 @@
+<div class="add-artist">
+  <mat-form-field> 
+    <input matInput placeholder="name" [(ngModel)]= 'artist.name'>
+  </mat-form-field>
+   <mat-form-field> 
+      <textarea matInput placeholder="description" [(ngModel)]= 'artist.description'></textarea>
+    </mat-form-field>
+    <mat-form-field> 
+        <input matInput placeholder="description" [(ngModel)]= 'artist.description'>
+      </mat-form-field>
+    <mat-form-field>
+      <mat-label>Category</mat-label>
+      <select matNativeControl required>
+          <option value="100" disabled="disabled" selected="selected">--Select--</option>
+        <option value="1">Electronic Dance Music</option>
+        <option value="2">Rock Music</option>
+        <option value="3">Jazz</option>
+        <option value="4">Dubstep</option>
+        <option value="5">Rhythm and Blues</option>
+        <option value="6">Techno</option>
+        <option value="7">Country Music</option>
+        <option value="8">Electro</option>
+        <option value="9">Indie Rock</option>
+        <option value="10">Pop Music</option>
+      </select>
+    </mat-form-field>
+
+</div>

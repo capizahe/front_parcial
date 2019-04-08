@@ -1,0 +1,17 @@
+<app-artists [mySelectedArtist]="artista"></app-artists>
+
+<div *ngFor = "let comment of comments ">
+        <app-comment [mySelectedComment]="comment"></app-comment>
+</div>
+
+<div class="leave-comment">
+
+ <mat-form-field> 
+    <textarea matInput placeholder="comment" [(ngModel)]= 'newComment'></textarea>
+</mat-form-field>
+
+<button mat-raised-button (click)="addComment()">Comment</button>
+
+    
+
+</div>
