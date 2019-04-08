@@ -5,7 +5,11 @@
 export const environment = {
   production: false,
   getAllArtists: 'http://localhost:8080/getAllArtists',
-  getArtistById: 'http://localhost:8080/getArtistById'
+  getArtistById: 'http://localhost:8080/getArtistById',
+  setDefaultData:'http://localhost:8080/setDefault',
+  addArtist: 'http://localhost:8080/addArtist',
+  addUser: 'http://localhost:8080/addUser'
+
 
 };
 

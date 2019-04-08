@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Artist } from 'src/app/artist';
+import { ArtistService } from 'src/app/service/artist.service';
 
 @Component({
   selector: 'app-create-artist',
@@ -9,12 +10,18 @@ import { Artist } from 'src/app/artist';
 export class CreateArtistComponent implements OnInit {
 
   artist: Artist;
+  selectedOption: number;
 
-  constructor() {
+  constructor(private artistService: ArtistService) {
     this.artist= new Artist();
    }
 
   ngOnInit() {
   }
 
+  addArtist(){
+
+    
+
+  }
 }

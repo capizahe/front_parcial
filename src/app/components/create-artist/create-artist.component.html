@@ -5,13 +5,11 @@
    <mat-form-field> 
       <textarea matInput placeholder="description" [(ngModel)]= 'artist.description'></textarea>
     </mat-form-field>
-    <mat-form-field> 
-        <input matInput placeholder="description" [(ngModel)]= 'artist.description'>
-      </mat-form-field>
+   
     <mat-form-field>
       <mat-label>Category</mat-label>
       <select matNativeControl required>
-          <option value="100" disabled="disabled" selected="selected">--Select--</option>
+          <option value="100" disabled="disabled" selected="selected" [(ngModel)]="selectedOption">--Select--</option>
         <option value="1">Electronic Dance Music</option>
         <option value="2">Rock Music</option>
         <option value="3">Jazz</option>
@@ -24,5 +22,11 @@
         <option value="10">Pop Music</option>
       </select>
     </mat-form-field>
+
+    <mat-card-actions>
+        <button mat-raised-button (click)="addArtist()">Open</button>
+    </mat-card-actions>
+
+
 
 </div>
