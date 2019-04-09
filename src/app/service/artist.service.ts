@@ -24,7 +24,7 @@ export class ArtistService {
   }
   addNewArtist(artist: Artist){
      console.log("artista a insertar" , artist);
-    const body =  new HttpParams().set('name',artist.name).set('description',artist.description).set('category',artist.category);
+    const body =  new HttpParams().set('name',artist.name).set('description',artist.description).set('category',(artist.category+""));
      return this.httpClient.post(environment.addArtist,body).subscribe();
   }
 

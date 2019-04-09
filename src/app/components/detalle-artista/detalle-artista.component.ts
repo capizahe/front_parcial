@@ -40,14 +40,6 @@ export class DetalleArtistaComponent implements OnInit {
     usuario: this.newUser
   }
   
-
-  this.artista= {
-      id:1,
-      name:'camilo',
-      description: 'nuevo cantante',
-      category: 'reggae',
-      image:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQLglbId-3-01TK3Xw69rbVeREIVVueidF5Qe_69ZaC37Qf571s"
-    };
     this.comments.push(this.comment);
 
   

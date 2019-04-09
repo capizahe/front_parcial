@@ -13,22 +13,17 @@ export class AllArtistsComponent implements OnInit {
   newArtist: Artist;
 
   constructor(private artistService: ArtistService) { 
-    this.newArtist = {
-      id:1,
-      name:'camilo',
-      description: 'nuevo cantante',
-      category: 'reggae',
-      image:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQLglbId-3-01TK3Xw69rbVeREIVVueidF5Qe_69ZaC37Qf571s"
-    };
-    this.artists = new Array();
-    this.artists.push(this.newArtist);
-
-
-
+ 
+  
 
   }
 
   ngOnInit() {
+    this.artistService.getAllArtists().subscribe(
+      all => {
+        this.artists=all;
+      }
+    );
   
 }
 }

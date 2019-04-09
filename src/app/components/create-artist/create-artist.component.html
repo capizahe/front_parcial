@@ -8,8 +8,8 @@
    
     <mat-form-field>
       <mat-label>Category</mat-label>
-      <select matNativeControl required>
-          <option value="100" disabled="disabled" selected="selected" [(ngModel)]="selectedOption">--Select--</option>
+      <select matNativeControl (change)="selectChangeHandler($event)">
+          <option value="100" disabled="disabled" selected="selected">--Select--</option>
         <option value="1">Electronic Dance Music</option>
         <option value="2">Rock Music</option>
         <option value="3">Jazz</option>
@@ -24,7 +24,7 @@
     </mat-form-field>
 
     <mat-card-actions>
-        <button mat-raised-button (click)="addArtist()">Open</button>
+        <button mat-raised-button (click)="addArtist()">Add</button>
     </mat-card-actions>
 
 

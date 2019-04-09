@@ -14,14 +14,17 @@ export class CreateArtistComponent implements OnInit {
 
   constructor(private artistService: ArtistService) {
     this.artist= new Artist();
+    this.selectedOption=1;
    }
 
   ngOnInit() {
   }
-
+  selectChangeHandler(event: any) {
+    this.selectedOption = parseInt(event.target.value);
+    this.artist.category=this.selectedOption;
+  }
   addArtist(){
-
-    
-
+    console.log(this.artist.category);
+     this.artistService.addNewArtist(this.artist);
   }
 }
