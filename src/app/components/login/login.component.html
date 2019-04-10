@@ -1,10 +1,13 @@
 
 <div class='form-login'>
+  <h1>Login</h1>
   <mat-form-field>
     <input matInput placeholder="user" [(ngModel)]="user">
   </mat-form-field>
+  <br>
   <mat-form-field>
       <input matInput placeholder="password"  [(ngModel)]="password" type="password">
     </mat-form-field>
+    <br>
   <button mat-raised-button color="primary" (click)="check()">login</button>
 </div>

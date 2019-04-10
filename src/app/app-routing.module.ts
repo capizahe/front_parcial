@@ -7,7 +7,7 @@ import { LoginComponent } from './components/login/login.component';
 import { DetalleArtistaComponent } from './components/detalle-artista/detalle-artista.component';
 
 const routes: Routes = [
-{path:'', redirectTo: '/login', pathMatch:'full'},
+{path:'', redirectTo: '/add-user', pathMatch:'full'},
 {path:'all-artists',component : AllArtistsComponent},
 {path:'add-user',component : CreateUserComponent},
 {path:'add-artist',component : CreateArtistComponent},

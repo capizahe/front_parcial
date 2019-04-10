@@ -19,7 +19,7 @@ export class DetalleArtistaComponent implements OnInit {
   comment: Comment;
 
   constructor(private route: ActivatedRoute) {
-this.id=0;
+
     this.comments = new Array();
 
 

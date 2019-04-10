@@ -6,6 +6,10 @@
         <mat-icon class="menu-icon" aria-hidden="false" aria-label="Menu
        Icon">menu</mat-icon>
        </button>
+       <button mat-button routerLink="/login">
+        <mat-icon class="menu-icon" aria-hidden="false" aria-label="login
+       Icon">login</mat-icon>
+       </button>
     </mat-toolbar-row>
    </mat-toolbar>
    
@@ -29,6 +33,11 @@
        Icon"></mat-icon>
         <span>Add User</span>
         </button>
+        <button mat-button routerLink="/login" >
+            <mat-icon class="menu-icon" aria-hidden="false" aria-label="Menu
+           Icon"></mat-icon>
+            <span>Logout</span>
+            </button>
 </mat-sidenav>
     <mat-sidenav-content width="100%" height="100%" >
         <router-outlet></router-outlet>

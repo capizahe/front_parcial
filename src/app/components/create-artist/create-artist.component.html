@@ -1,11 +1,13 @@
 <div class="add-artist">
+  <h1>Agregar Artista</h1>
   <mat-form-field> 
     <input matInput placeholder="name" [(ngModel)]= 'artist.name'>
   </mat-form-field>
+  <br>
    <mat-form-field> 
       <textarea matInput placeholder="description" [(ngModel)]= 'artist.description'></textarea>
     </mat-form-field>
-   
+   <br>
     <mat-form-field>
       <mat-label>Category</mat-label>
       <select matNativeControl (change)="selectChangeHandler($event)">
@@ -22,9 +24,9 @@
         <option value="10">Pop Music</option>
       </select>
     </mat-form-field>
-
+    <br>
     <mat-card-actions>
-        <button mat-raised-button (click)="addArtist()">Add</button>
+        <button mat-raised-button (click)="addArtist()">Agregar Artista</button>
     </mat-card-actions>
 
 

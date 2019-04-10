@@ -1,15 +1,18 @@
-<div>
+<div class="addUser">
+  <h1>Crear Usuario</h1>
   <mat-form-field>
-    <input matInput placeholder="your name" [(ngModel)] = "usuario.name">
+    <input matInput placeholder="nombre" [(ngModel)] = "usuario.name">
   </mat-form-field>
+  <br>
   <mat-form-field>
-      <input matInput placeholder="create password" [(ngModel)] = "usuario.password" type="password">
+      <input matInput placeholder="contraseña" [(ngModel)] = "usuario.password" type="password">
     </mat-form-field>
+    <br>
     <mat-form-field>
-        <input matInput placeholder="create username" [(ngModel)] = "usuario.username">
+        <input matInput placeholder="nombre de usuario" [(ngModel)] = "usuario.username">
       </mat-form-field>
-
+      <br>
       <mat-card-actions>
-          <button mat-raised-button (click)="addAUser()">Open</button>
+          <button mat-raised-button (click)="addAUser()">Crear Usuario</button>
       </mat-card-actions>
 </div>
