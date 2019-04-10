@@ -1,13 +1,10 @@
 .artist-card{
- 
     position: relative;
     width: 300px;
     height: auto;
     left: 40%;
-
-    
-
 }
 .listadoArtistas{
     text-align: center;
+    padding-top: 10px;
 }

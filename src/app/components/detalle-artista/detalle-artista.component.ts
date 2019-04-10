@@ -20,16 +20,27 @@ export class DetalleArtistaComponent implements OnInit {
   comment: Comment;
 
   constructor(private route: ActivatedRoute, private artistService:ArtistService) {
-   }
-   
-  ngOnInit() {
-    this.id = parseInt(this.route.snapshot.paramMap.get("id"));
-    this.artistService.getAllComments(this.id).subscribe(
+
+
+     this.comments = new Array();
+     this.id = parseInt(this.route.snapshot.paramMap.get("id"));
+
+     this.artistService.getArtistById(this.id).subscribe(
+       artist=> {
+         this.artista=artist;
+       }
+     );
+     this.artistService.getAllComments(this.id).subscribe(
       all => {
         this.comments=all;
         console.log(this.comments);
       }
-    );
+    ); 
+    
+   }
+
+  ngOnInit() {
+    
 
 
   }
