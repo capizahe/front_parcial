@@ -8,7 +8,10 @@ export const environment = {
   getArtistById: 'http://localhost:8080/getArtistById',
   setDefaultData:'http://localhost:8080/setDefault',
   addArtist: 'http://localhost:8080/addArtist',
-  addUser: 'http://localhost:8080/addUser'
+  addUser: 'http://localhost:8080/addUser',
+  getCommentsById: 'http://localhost:8080/getCommentsById',
+  addComment: 'http://localhost:8080/addComment'
+
 
 
 };

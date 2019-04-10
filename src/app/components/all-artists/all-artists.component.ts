@@ -13,12 +13,15 @@ export class AllArtistsComponent implements OnInit {
   newArtist: Artist;
 
   constructor(private artistService: ArtistService) { 
- 
   
-
   }
 
   ngOnInit() {
+    this.artistService.setDefaultData().subscribe(
+      all => {
+        console.log(all);
+      }
+    );
     this.artistService.getAllArtists().subscribe(
       all => {
         this.artists=all;

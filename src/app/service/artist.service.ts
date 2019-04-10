@@ -4,6 +4,7 @@ import { Observable } from 'rxjs';
 import { Artist } from '../artist';
 import { environment } from 'src/environments/environment';
 import { Usuario } from '../usuario';
+import {Comment} from '../comment';
 
 @Injectable({
   providedIn: 'root'
@@ -27,6 +28,16 @@ export class ArtistService {
     const body =  new HttpParams().set('name',artist.name).set('description',artist.description).set('category',(artist.category+""));
      return this.httpClient.post(environment.addArtist,body).subscribe();
   }
+
+  addComment(comment: Comment){
+    console.log("comentario insertado: ", comment);
+    const body = new HttpParams().set('artist', (comment.id_artist+"")).set('comment', comment.comment).set('usuario', (comment.usuario+""));
+    return this.httpClient.post(environment.addComment, body).subscribe();
+
+  }
+
+  
+
 
   addNewUser(usuario: Usuario){
     console.log("artista a insertar" , usuario);

@@ -19,6 +19,7 @@ import { HttpClientModule } from '@angular/common/http';
 import { DetalleArtistaComponent } from './components/detalle-artista/detalle-artista.component';
 import { CommentComponent } from './components/comment/comment.component';
 import { AllCommentsComponent } from './components/all-comments/all-comments.component';
+import { CreateCommentComponent } from './components/create-comment/create-comment.component';
 
 
 
@@ -32,7 +33,8 @@ import { AllCommentsComponent } from './components/all-comments/all-comments.com
     CreateUserComponent,
     DetalleArtistaComponent,
     CommentComponent,
-    AllCommentsComponent
+    AllCommentsComponent,
+    CreateCommentComponent
    
   ],
   imports: [

@@ -12,7 +12,8 @@ const routes: Routes = [
 {path:'add-user',component : CreateUserComponent},
 {path:'add-artist',component : CreateArtistComponent},
 {path:'login',component : LoginComponent},
-{path:'artistid/:id',component : DetalleArtistaComponent}
+{path:'artistid/:id',component : DetalleArtistaComponent},
+
 
 ];
 
