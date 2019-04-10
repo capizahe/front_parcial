@@ -3,6 +3,7 @@ import { Artist } from 'src/app/artist';
 import { Comment } from 'src/app/comment';
 import { ActivatedRoute } from '@angular/router';
 import { Usuario } from 'src/app/usuario';
+import { ArtistService } from 'src/app/service/artist.service';
 
 
 @Component({
@@ -18,16 +19,18 @@ export class DetalleArtistaComponent implements OnInit {
   newUser:Usuario;
   comment: Comment;
 
-  constructor(private route: ActivatedRoute) {
-
-    this.comments = new Array();
-
-
+  constructor(private route: ActivatedRoute, private artistService:ArtistService) {
    }
    
   ngOnInit() {
     this.id = parseInt(this.route.snapshot.paramMap.get("id"));
     console.log(this.id);
+
+    this.artistService.getAllComments(this.id).subscribe(
+      all => {
+        this.comments=all;
+      }
+    );
 
 
   }

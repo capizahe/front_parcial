@@ -1,5 +1,6 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit ,Input} from '@angular/core';
 import { Comment } from 'src/app/comment';
+import { ArtistService } from 'src/app/service/artist.service';
 
 @Component({
   selector: 'app-all-comments',
@@ -8,15 +9,18 @@ import { Comment } from 'src/app/comment';
 })
 export class AllCommentsComponent implements OnInit {
 
+  @Input() id_artista:number;
   comments: Array<Comment>;
 
-  constructor() {
+  constructor(private artistService: ArtistService) {
 
     
 
    }
 
   ngOnInit() {
+
+    
   }
 
 }

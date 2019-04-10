@@ -35,6 +35,10 @@ export class ArtistService {
     return this.httpClient.post(environment.addComment, body).subscribe();
 
   }
+  getAllComments(id_usuario: number):Observable<Comment[]>{
+    return this.httpClient.get<Comment[]>(environment.getAllCommentsById+'/'+id_usuario);
+  }
+
 
   
 
