@@ -11,7 +11,6 @@ export const environment = {
   addUser: 'http://localhost:8080/addUser',
   getCommentsById: 'http://localhost:8080/getCommentsById',
   addComment: 'http://localhost:8080/addComment',
-  getAllCommentsById: "/getCommentsById"
 
 
 

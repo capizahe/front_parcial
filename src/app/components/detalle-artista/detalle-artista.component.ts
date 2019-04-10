@@ -24,11 +24,10 @@ export class DetalleArtistaComponent implements OnInit {
    
   ngOnInit() {
     this.id = parseInt(this.route.snapshot.paramMap.get("id"));
-    console.log(this.id);
-
     this.artistService.getAllComments(this.id).subscribe(
       all => {
         this.comments=all;
+        console.log(this.comments);
       }
     );
 

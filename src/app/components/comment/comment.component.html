@@ -1,11 +1,10 @@
 <mat-card mat-card class="comment-card">
     <mat-card-header> 
-    <mat-card-title>{{mySelectedComment?.usuario['username']}}</mat-card-title>
-    <mat-card-subtitle>{{mySelectedArtist?.id}}</mat-card-subtitle>
+    <mat-card-title>{{mySelectedComment?.id_usuario['name']}}</mat-card-title>
     </mat-card-header>
     <mat-card-content>
     <p>
-        {{mySelectedComment?.comment}}
+        {{mySelectedComment?.comentario}}
     </p>
     </mat-card-content>
     <mat-card-actions>

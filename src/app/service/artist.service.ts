@@ -36,7 +36,7 @@ export class ArtistService {
 
   }
   getAllComments(id_usuario: number):Observable<Comment[]>{
-    return this.httpClient.get<Comment[]>(environment.getAllCommentsById+'/'+id_usuario);
+    return this.httpClient.get<Comment[]>(environment.getCommentsById+'/'+id_usuario);
   }
 
 
